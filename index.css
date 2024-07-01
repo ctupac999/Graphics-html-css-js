@@ -11,17 +11,13 @@
     box-sizing: border-box;
 }
 
-body {
-    min-height: 100dvh;
-}
-
 main,
 section,
 article,
 h3,
 h4,
 form,
-button {
+button{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,7 +74,7 @@ main section {
     gap: 8px;
 }
 
-section{
+#heading{
     width: 990px;
 }
 
@@ -115,6 +111,10 @@ form {
     background-color: var(--secondary-backgruoud-color);
     gap: 8px;
     align-items: center;
+}
+
+form label{
+    height: 10px;
 }
 
 form svg {
@@ -179,20 +179,74 @@ button {
 #counters {
     height: 92px;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 #counters article{
     width: 319.33px;
+    padding: 16px;
     flex-direction: row;
     border-radius: 8px;
     border-width: 1px;
     border-style: solid;
     border-color: var(--counterss-border-color);
     background-color: var(--secondary-backgruoud-color);
+    gap:16px;
+    align-items: center;
+    justify-content: left;
 }
-
 
 #counters svg {
     height: 60px;
     width: 60px;
+}
+
+#counters h4{
+    height: 60px;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+#emails svg,#sms svg,#print svg{
+    height: 60px;
+    width:60px;
+    border-radius: 8px;
+}
+
+#emails svg{
+    background: url(./email.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--primary-background-color);
+}
+
+#sms svg{
+    background: url(./sms.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--primary-background-color);
+
+}
+#print svg{
+    background: url(./print.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--primary-background-color);
+}
+
+#counters data{
+    align-self: flex-end;
+}
+
+#indicators {
+    height: 207px;
+    width: 990pxs;
+    border-radius: 8px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--secondary-backgruoud-color);
+
 }

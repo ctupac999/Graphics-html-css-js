@@ -28,6 +28,7 @@ button{
     --secondary-color: #8590A2;
     --tertiary-color: #44546f;
     --quaternary-color: #1e4054;
+    --porcentual-color:#626F86;
     --primary-background-color: #f4f5f7;
     --button-color: #FFCB03;
     --warning-primary-color: #027FB7;
@@ -182,6 +183,10 @@ button {
     justify-content: space-between;
 }
 
+#counters data{
+    align-self: flex-end;
+}
+
 #counters article{
     width: 319.33px;
     padding: 16px;
@@ -237,16 +242,69 @@ button {
     background-color: var(--primary-background-color);
 }
 
-#counters data{
-    align-self: flex-end;
-}
 
 #indicators {
     height: 207px;
     width: 990pxs;
+    padding: 16px 48px 16px 48px;
     border-radius: 8px;
     flex-direction: row;
     justify-content: space-between;
-    background-color: var(--secondary-backgruoud-color);
-
+    align-items: center;
+    background-color: var(--secondary-backgruoud-color);    
 }
+
+#indicators article{
+    height: 126px;
+    width: 226px;
+    align-items: flex-start;
+}
+
+#indicators h4{
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    flex-direction: row;
+    align-items: center;
+     
+}
+#indicators h5{
+    color: var(--porcentual-color);
+    font-family: var(--font-secondary);
+    font-size: 13px;
+    font-weight: 400;
+}
+#indicators data {
+    color: var(--number-primary-color);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600; 
+}
+
+#running{
+    background-color: var(--chart-color4);
+}
+#success{
+    background-color: var(--chart-color3);
+}
+#scheduled{
+    background-color: var(--chart-color2);
+}
+#error{
+    background-color: var(--chart-color1);
+}
+.subStatus h3{
+    font-size: 15px;
+    font-family: var(--font-secondary);
+}
+
+.subStatus button{
+    height: 12px;
+    width: 12px;
+    border-radius: 60px;
+}
+
+

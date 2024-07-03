@@ -17,7 +17,8 @@ article,
 h3,
 h4,
 form,
-button{
+button,
+div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +29,7 @@ button{
     --secondary-color: #8590A2;
     --tertiary-color: #44546f;
     --quaternary-color: #1e4054;
-    --porcentual-color:#626F86;
+    --porcentual-color: #626F86;
     --primary-background-color: #f4f5f7;
     --button-color: #FFCB03;
     --warning-primary-color: #027FB7;
@@ -75,7 +76,7 @@ main section {
     gap: 8px;
 }
 
-#heading{
+#heading {
     width: 990px;
 }
 
@@ -114,7 +115,7 @@ form {
     align-items: center;
 }
 
-form label{
+form label {
     height: 10px;
 }
 
@@ -183,11 +184,11 @@ button {
     justify-content: space-between;
 }
 
-#counters data{
+#counters data {
     align-self: flex-end;
 }
 
-#counters article{
+#counters article {
     width: 319.33px;
     padding: 16px;
     flex-direction: row;
@@ -196,7 +197,7 @@ button {
     border-style: solid;
     border-color: var(--counterss-border-color);
     background-color: var(--secondary-backgruoud-color);
-    gap:16px;
+    gap: 16px;
     align-items: center;
     justify-content: left;
 }
@@ -206,19 +207,22 @@ button {
     width: 60px;
 }
 
-#counters h4{
+#counters h4 {
     height: 60px;
     justify-content: space-between;
     font-weight: 600;
+    color: var(--quaternary-color);
 }
 
-#emails svg,#sms svg,#print svg{
+#emails svg,
+#sms svg,
+#print svg {
     height: 60px;
-    width:60px;
+    width: 60px;
     border-radius: 8px;
 }
 
-#emails svg{
+#emails svg {
     background: url(./email.svg);
     background-size: auto;
     background-repeat: no-repeat;
@@ -226,7 +230,7 @@ button {
     background-color: var(--primary-background-color);
 }
 
-#sms svg{
+#sms svg {
     background: url(./sms.svg);
     background-size: auto;
     background-repeat: no-repeat;
@@ -234,12 +238,18 @@ button {
     background-color: var(--primary-background-color);
 
 }
-#print svg{
+
+#print svg {
     background: url(./print.svg);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--primary-background-color);
+}
+
+#counters .number{
+    font-family: var(--font-primary);
+    font-size: 31px; 
 }
 
 
@@ -251,60 +261,73 @@ button {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--secondary-backgruoud-color);    
+    background-color: var(--secondary-backgruoud-color);
+    
 }
 
-#indicators article{
+#indicators article {
     height: 126px;
     width: 226px;
     align-items: flex-start;
+    padding: 4px;
+    gap:16px;
+
 }
 
-#indicators h4{
-    font-family: var(--font-secondary);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    flex-direction: row;
-    align-items: center;
-     
-}
-#indicators h5{
-    color: var(--porcentual-color);
-    font-family: var(--font-secondary);
-    font-size: 13px;
-    font-weight: 400;
-}
 #indicators data {
     color: var(--number-primary-color);
     text-align: center;
     font-family: Montserrat;
     font-size: 25px;
     font-style: normal;
-    font-weight: 600; 
+    font-weight: 600;
+}
+#indicators div {
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.subStatus   h4{
+    color: var(--number-secondary-color);
+    font-family: var(--font-primary);
+    font-size: 17px;
+    font-weight: 600;
 }
 
-#running{
+#indicators h5 {
+    color: var(--porcentual-color);
+    font-family: var(--font-secondary);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#running {
     background-color: var(--chart-color4);
 }
-#success{
+
+#success {
     background-color: var(--chart-color3);
 }
-#scheduled{
+
+#scheduled {
     background-color: var(--chart-color2);
 }
-#error{
+
+#error {
     background-color: var(--chart-color1);
 }
-.subStatus h3{
+
+.subStatus h3 {
     font-size: 15px;
     font-family: var(--font-secondary);
 }
 
-.subStatus button{
+.subStatus button {
     height: 12px;
     width: 12px;
     border-radius: 60px;
 }
-
-

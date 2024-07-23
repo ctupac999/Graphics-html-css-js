@@ -1,0 +1,81 @@
+#filter {
+    flex-direction: row;
+    justify-content: left;
+    gap: 8px;
+}
+
+form {
+    height: 34px;
+    padding: 8px;
+    flex-direction: row;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--filter-border-color);
+    background-color: var(--secondary-backgruoud-color);
+    gap: 8px;
+    align-items: center;
+}
+
+form label {
+    height: 10px;
+}
+
+form svg {
+    height: 18px;
+    width: 18px;
+    background: url(../calendar.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+#filter select {
+    height: 34px;
+    width: 220px;
+    color: var(--tertiary-color);
+    background-color: var(--secondary-backgruoud-color);
+    border-style: none;
+}
+
+button {
+    height: 34px;
+    border-radius: 4px;
+    border-style: none;
+    font-size: 14px;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+#apply svg {
+    height: 16px;
+    width: 16px;
+    background: url(../check.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#apply {
+    width: 91px;
+    color: var(--quaternary-color);
+    background-color: var(--button-color);
+}
+
+#clear svg {
+    height: 16px;
+    width: 16px;
+    color: var(--quaternary-color);
+    background: url(../clear.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#clear {
+    width: 88px;
+    color: var(--quaternary-color);
+    background-color: var(--primary-background-color);
+}

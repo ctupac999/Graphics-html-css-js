@@ -1,0 +1,19 @@
+#heading {
+    width: 990px;
+}
+
+h3 {
+    height: 28px;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+}
+
+h4 {
+    height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--font-secondary);
+    color: var(--secondary-color);
+}

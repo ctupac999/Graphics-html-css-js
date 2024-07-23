@@ -1,0 +1,79 @@
+
+#indicators {
+    height: 207px;
+    width: 990pxs;
+    padding: 16px 48px 16px 48px;
+    border-radius: 8px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-backgruoud-color);
+    
+}
+
+#indicators article {
+    height: 126px;
+    width: 226px;
+    align-items: flex-start;
+    padding: 4px;
+    gap:16px;
+
+}
+
+#indicators data {
+    color: var(--number-primary-color);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+}
+#indicators div {
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.subStatus   h4{
+    color: var(--number-secondary-color);
+    font-family: var(--font-primary);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#indicators h5 {
+    color: var(--porcentual-color);
+    font-family: var(--font-secondary);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#running {
+    background-color: var(--chart-color4);
+}
+
+#success {
+    background-color: var(--chart-color3);
+}
+
+#scheduled {
+    background-color: var(--chart-color2);
+}
+
+#error {
+    background-color: var(--chart-color1);
+}
+
+.subStatus h3 {
+    font-size: 15px;
+    font-family: var(--font-secondary);
+}
+
+.subStatus button {
+    height: 12px;
+    width: 12px;
+    border-radius: 60px;
+}

@@ -1,5 +1,6 @@
 #heading {
     width: 990px;
+    flex-direction: column;
 }
 
 h3 {

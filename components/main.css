@@ -20,7 +20,6 @@ section,
 article,
 h3,
 h4,
-button,
 div{
     display: flex;
     flex-direction: column;
@@ -52,7 +51,7 @@ div{
     --counterss-border-color: #F1F2F4;
     --font-primary: 'Montserrat';
     --font-secondary: 'Open Sans';
-    --table-name-background-color: #F7F8FA;
+    --table-background-color: #F7F8FA;
 }
 
 body {

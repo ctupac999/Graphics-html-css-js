@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../components/main.css">   
+    <link rel="stylesheet" href="../components/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>   
     <title>Prueba tecnica</title>
 </head>
 
 <body>
-    <header>
-    </header>
     <main>
         <section id="heading">
             <h3>Overview</h3>
@@ -70,32 +69,31 @@
                 </span>
             </article>
             <article id="cackechart">
-                cackechart
-            </article>
+                <canvas id="combinedChart" width="400" height="400"></canvas>            </article>
             <article class="subStatus"  >
                 <span>
-                    <h3>Running</h3>
+                    <h3>Active</h3>
                     <div>
-                        <button id="running"></button>
-                        <h4>xxxxxx</h4>
+                        <button id="active"></button>
+                        <h4 class="data-indicator" id="activeIndicator">xxxxxx</h4>
                         <h5>nn</h5>
                     </div>
                 </span>
                 <span>
-                    <h3>Success</h3>
+                    <h3>Inactive</h3>
                     <div>
-                        <button id="success"></button>
-                        <h4>xxxxxx</h4>
+                        <button id="inactive"></button>
+                        <h4 class="data-indicator" id="inactiveIndicator">xxxxxx</h4>
                         <h5>nn</h5>
                     </div>
                 </span>
             </article>
             <article class="subStatus">
                 <span>
-                    <h3>Scheduled</h3>
+                    <h3>Pending</h3>
                     <div>
-                        <button id="scheduled"></button>
-                        <h4>xxxxxx</h4>
+                        <button id="pending"></button>
+                        <h4 class="data-indicator" id="pendingIndicator">xxxxxx</h4>
                         <h5>nn</h5>
                     </div>
                 </span>
@@ -103,7 +101,7 @@
                     <h3>Error</h3>
                     <div>
                         <button id="error"></button>
-                        <h4>xxxxxx</h4>
+                        <h4 class="data-indicator" id="notProcessedIndicator">xxxxxx</h4>
                         <h5>nn</h5>
                     </div>
                 </span>
@@ -126,6 +124,9 @@
         </section>
     </main>
     <script src="table.js"></script>
+    <script src="cackechart.js"></script>
+    <script src="indicators.js"></script>
+
 
 </body>
 

@@ -51,15 +51,15 @@
     font-weight: 400;
 }
 
-#running {
+#active {
     background-color: var(--chart-color4);
 }
 
-#success {
+#inactive {
     background-color: var(--chart-color3);
 }
 
-#scheduled {
+#pending {
     background-color: var(--chart-color2);
 }
 

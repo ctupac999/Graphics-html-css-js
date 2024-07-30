@@ -27,8 +27,8 @@ async function main() {
             pending: 0,
             notProcessed: 0
         };
-          // Total de registros
-          const total = data.length;
+        // Total de registros
+        const total = data.length;
 
         // Contar los estados y processed false
         data.forEach(item => {
@@ -37,16 +37,16 @@ async function main() {
             if (item.STATUS === 'pending') counts.pending++;
             if (!item.PROCESSED) counts.notProcessed++;
         });
-         // Calcular porcentajes
-         const percentages = {
+        // Calcular porcentajes
+        const percentages = {
             active: calculatePercentage(counts.active, total),
             inactive: calculatePercentage(counts.inactive, total),
             pending: calculatePercentage(counts.pending, total),
             notProcessed: calculatePercentage(counts.notProcessed, total)
         };
 
-              // Mostrar el total de registros en el HTML
-              document.getElementById('totalRecords').textContent = total;
+        // Mostrar el total de registros en el HTML
+        document.getElementById('totalRecords').textContent = total;
 
         // Mostrar los indicadores en el HTML
         document.getElementById('activeIndicator').textContent = counts.active;
@@ -54,13 +54,13 @@ async function main() {
         document.getElementById('pendingIndicator').textContent = counts.pending;
         document.getElementById('notProcessedIndicator').textContent = counts.notProcessed;
 
-                // Mostrar los porcentajes en las etiquetas h5
+        // Mostrar los porcentajes en las etiquetas h5
         document.getElementById('activeIndicatorPercentage').textContent = `${percentages.active}%`;
         document.getElementById('inactiveIndicatorPercentage').textContent = `${percentages.inactive}%`;
         document.getElementById('pendingIndicatorPercentage').textContent = `${percentages.pending}%`;
         document.getElementById('notProcessedIndicatorPercentage').textContent = `${percentages.notProcessed}%`;
 
-        
+
         // Crear el gráfico combinado
         const ctxCombined = document.getElementById('combinedChart').getContext('2d');
         const combinedChart = new Chart(ctxCombined, {

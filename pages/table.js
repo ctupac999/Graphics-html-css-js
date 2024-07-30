@@ -12,11 +12,13 @@ async function table() {
       data.forEach(item => {
           let row = document.createElement('tr');
 
-          // Crear y añadir celdas a la fila
-          Object.values(item).forEach(value => {
-              let cell = document.createElement('td');
-              cell.textContent = value;
-              row.appendChild(cell);   
+          // Filtrar propiedades para excluir 'date-message'
+          Object.entries(item).forEach(([key, value]) => {
+              if (key !== 'date-message') {
+                  let cell = document.createElement('td');
+                  cell.textContent = value;
+                  row.appendChild(cell);
+              }
           });
 
           // Añadir la fila al cuerpo de la tabla

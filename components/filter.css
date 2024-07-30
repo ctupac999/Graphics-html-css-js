@@ -40,9 +40,6 @@ form svg {
     border-style: none;
 }
 
-option{
-    width: ;
-}
 
 button {
     height: 34px;
@@ -55,6 +52,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 #apply svg {

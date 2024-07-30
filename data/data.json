@@ -4,69 +4,79 @@
         "ID": "001",
         "STATUS": "active",
         "PROCESSED": true,
-        "TOTAL": 150.75
+        "TOTAL": 150.75,
+        "date-message": "2024-07-01"
     },
     {
         "NAME": "Jane Smith",
         "ID": "002",
         "STATUS": "inactive",
         "PROCESSED": false,
-        "TOTAL": 200.50
+        "TOTAL": 200.50,
+        "date-message": "2024-07-03"
     },
     {   
         "NAME": "Emily Johnson",
         "ID": "003",
         "STATUS": "active",
         "PROCESSED": true,
-        "TOTAL": 300.00 
+        "TOTAL": 300.00,
+        "date-message": "2024-07-05"
     },
     {
         "NAME": "Michael Brown",
         "ID": "004",
         "STATUS": "pending",
         "PROCESSED": false,
-        "TOTAL": 100.00
+        "TOTAL": 100.00,
+        "date-message": "2024-07-07"
     },
     {
         "NAME": "Sarah Davis",
         "ID": "005",
         "STATUS": "active",
         "PROCESSED": true,
-        "TOTAL": 250.25
+        "TOTAL": 250.25,
+        "date-message": "2024-07-09"
     },
     {
         "NAME": "David Wilson",
         "ID": "006",
         "STATUS": "inactive",
         "PROCESSED": false,
-        "TOTAL": 175.75
+        "TOTAL": 175.75,
+        "date-message": "2024-07-10"
     },
     {
         "NAME": "Laura Martinez",
         "ID": "007",
         "STATUS": "pending",
         "PROCESSED": true,
-        "TOTAL": 400.00
+        "TOTAL": 400.00,
+        "date-message": "2024-07-12"
     },
     {
         "NAME": "James Anderson",
         "ID": "008",
         "STATUS": "active",
         "PROCESSED": false,
-        "TOTAL": 500.50
+        "TOTAL": 500.50,
+        "date-message": "2024-07-14"
     },
     {
         "NAME": "Patricia Thomas",
         "ID": "009",
         "STATUS": "inactive",
         "PROCESSED": true,
-        "TOTAL": 275.00
+        "TOTAL": 275.00,
+        "date-message": "2024-07-16"
     },
     {
         "NAME": "Robert Taylor",
         "ID": "010",
         "STATUS": "pending",
         "PROCESSED": false,
-        "TOTAL": 325.25
+        "TOTAL": 325.25,
+        "date-message": "2024-07-18"
     }
 ]

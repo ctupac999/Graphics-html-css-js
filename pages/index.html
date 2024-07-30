@@ -25,11 +25,11 @@
                     <option value="choise3">Last year</option>
                 </select>
             </form>
-            <button id="apply">
+            <button type="button" id="apply">
                 <svg></svg>
                 Apply
             </button>
-            <button id="clear">
+            <button type="button" id="clear">
                 <svg></svg>
                 Clear
             </button>
@@ -109,19 +109,22 @@
             </article>
         </section>
         <section id="table">
+            <div class="table-container">
+
             <table id="table-data">
                 <thead>
                     <tr>
-                        <th class="tableTitle"><h5>NAME</h5></th>
-                        <th class="tableTitle">ID</th>
-                        <th class="tableTitle">STATUS</th>
-                        <th class="tableTitle">PROCESSED</th>
-                        <th class="tableTitle">TOTAL</th>
+                        <th><h5 class="tableTitle">NAME</h5></th>
+                        <th><h5 class="tableTitle">ID</h5></th>
+                        <th><h5 class="tableTitle">STATUS</h5></th>
+                        <th><h5 class="tableTitle">PROCESSED</h5></th>
+                        <th><h5 class="tableTitle">TOTAL</h5></th>
                     </tr>
                 </thead>
                 <tbody>
                 </tbody>
-            </table>    
+            </table> 
+        </div>   
         </section>
     </main>
     <script src="table.js"></script>

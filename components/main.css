@@ -62,12 +62,6 @@ body {
     background-color: var(--primary-background-color);
 }
 
-header {
-    width: 100vw;
-    height: 56px;
-    background-color: var(--secondary-backgruoud-color);
-}
-
 main {
     width: 990px;
     gap: 24px;
@@ -76,3 +70,5 @@ main {
 main section {
     gap: 8px;
 }
+
+

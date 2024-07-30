@@ -1,5 +1,20 @@
+@import url('main.css');
+
+#table {
+    margin: 30px;
+
+}
+
+
 #table tr{
-    background-color: --var()
+    background-color: var(--table-background-color);
+    text-align: left;
+    font-family: 'Open Sans';
+    color: var(--primary-color);
+    font-size: 14px;
 };
 
-th {text-align: left;}
+#table .tableTitle{
+    font-size: 12px;
+    color: var(--tertiary-color);
+}

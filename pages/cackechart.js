@@ -10,6 +10,11 @@ async function loadData(url) {
     return response.json();
 }
 
+// Función para calcular el porcentaje
+function calculatePercentage(part, total) {
+    return ((part / total) * 100).toFixed(2);
+}
+
 // Función principal
 async function main() {
     try {
@@ -31,7 +36,14 @@ async function main() {
             if (!item.PROCESSED) counts.notProcessed++;
         });
 
-        
+            
+
+        // Mostrar los indicadores en el HTML
+        document.getElementById('activeIndicator').textContent = counts.active;
+        document.getElementById('inactiveIndicator').textContent = counts.inactive;
+        document.getElementById('pendingIndicator').textContent = counts.pending;
+        document.getElementById('notProcessedIndicator').textContent = counts.notProcessed;
+
         // Crear el gráfico combinado
         const ctxCombined = document.getElementById('combinedChart').getContext('2d');
         const combinedChart = new Chart(ctxCombined, {
@@ -39,8 +51,8 @@ async function main() {
             data: {
                 datasets: [{
                     label: 'Status y Not Processed',
-                    data: [counts.active, counts.inactive, counts.pending, counts.notProcessed],
-                    backgroundColor: ['#03A9F4', '#22C55E', '#FF7B1C', '#D32F2F']
+                    data: [counts.active, counts.inactive, counts.pending],
+                    backgroundColor: ['#03A9F4', '#22C55E', '#FF7B1C']
                 }]
             },
             options: {

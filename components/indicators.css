@@ -28,6 +28,7 @@
     font-style: normal;
     font-weight: 600;
 }
+
 #indicators div {
     font-family: var(--font-secondary);
     font-size: 14px;
@@ -37,6 +38,7 @@
     align-items: center;
     gap: 10px;
 }
+
 .subStatus   h4{
     color: var(--number-secondary-color);
     font-family: var(--font-primary);
@@ -77,3 +79,10 @@
     width: 12px;
     border-radius: 60px;
 }
+
+
+
+
+
+
+

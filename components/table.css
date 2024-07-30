@@ -6,7 +6,7 @@
 }
 
 
-#table tr{
+#table tr   {
     background-color: var(--table-background-color);
     text-align: left;
     font-family: 'Open Sans';

@@ -17,6 +17,9 @@ table {
     max-height: 400px; /* Ajusta este valor según tus necesidades */
     overflow-y: auto;
 }
+thead .child:first-child{
+    width: 958px;
+}
 
 /* Estilo general para las filas de la tabla */
 #table tr {

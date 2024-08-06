@@ -1,51 +1,83 @@
+
 /* Estilo general para la tabla */
 #table {
-    height: 500px;
+    height: 400px;
     width: 990px;
     border-radius: 8px;
     background-color: var(--secondary-backgruoud-color);
     text-align: left;
-    align-items: center;
+    align-items: center;    
+    padding-top: 42px;
 }
 
 table {
     width: 958px;
-    padding-top: 84px;
 }
 
 .table-container {
-    max-height: 400px; /* Ajusta este valor según tus necesidades */
-    overflow-y: auto;
+    max-height:max-content;
+    overflow-y: scroll;
+    vertical-align: top; /* Alinear filas en la parte superior */
+
 }
-thead .child:first-child{
-    width: 958px;
-}
+
 
 /* Estilo general para las filas de la tabla */
 #table tr {
     height: 42px;
-    max-width: 958px;
     font-family: 'Open Sans';
     color: var(--primary-color);
     font-size: 14px;
 }
 
+
 /* Estilo para los encabezados de la tabla */
-#table .tableTitle {
+
+
+thead {
     height: 42px;
+    width: 955px;
+    position: absolute;
+    top: 440px;
+    z-index: 1; /* Asegura que los encabezados estén sobre el contenido */
     font-size: 12px;
     color: var(--tertiary-color);
     background-color: #F7F8FA;
+    font-family: 'Open Sans';
     display: flex;
-    align-items: center;
-    padding: 16px;
-    width: 100%; /* Asegura que ocupe todo el ancho posible */
     box-sizing: border-box; /* Incluye el padding en el ancho total */
-position: absolute;
-margin-top: -16px;}
+}
 
+th{
+    padding: 9px 16px 0 16px;
+}
+
+tr :first-child{
+    width: 312px;
+}
+
+#identificator{
+    width: 127px;
+}
+
+#status{
+    width: 192px;
+}
+
+#processed{
+    width: 142px;
+}
+
+#total{
+    width: 171px;
+}
+
+tbody{
+    vertical-align: top; /* Alinear filas en la parte superior */
+
+}
 #table-data td {
-    padding: 16px;
+    padding: 0 16px 0 16px;
 }
 
 #table tr:nth-child(even) {

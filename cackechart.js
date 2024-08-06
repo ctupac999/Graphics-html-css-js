@@ -4,7 +4,7 @@ import { filterData } from './tableController.js';
 import { clearTable } from './tableController.js';
 
 // Ruta al archivo JSON
-const dataUrl = '../data/data.json';
+const dataUrl = './data/data.json';
 
 // Función para cargar los datos JSON
 async function loadData(url) {

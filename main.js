@@ -10,7 +10,7 @@ window.data = [];
  */
 async function init() {
     try {
-        window.data = await loadData('../data/data.json');
+        window.data = await loadData('./data/data.json');
         populateTable(window.data); // Llenar la tabla con los datos iniciales
     } catch (error) {
         console.error('Error initializing application:', error);

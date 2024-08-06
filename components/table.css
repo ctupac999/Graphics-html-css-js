@@ -1,5 +1,4 @@
 
-/* Estilo general para la tabla */
 #table {
     height: 400px;
     width: 990px;
@@ -17,12 +16,11 @@ table {
 .table-container {
     max-height:max-content;
     overflow-y: scroll;
-    vertical-align: top; /* Alinear filas en la parte superior */
+    vertical-align: top; 
 
 }
 
 
-/* Estilo general para las filas de la tabla */
 #table tr {
     height: 42px;
     font-family: 'Open Sans';
@@ -31,7 +29,6 @@ table {
 }
 
 
-/* Estilo para los encabezados de la tabla */
 
 
 thead {
@@ -39,13 +36,13 @@ thead {
     width: 955px;
     position: absolute;
     top: 440px;
-    z-index: 1; /* Asegura que los encabezados estén sobre el contenido */
+    z-index: 1;
     font-size: 12px;
     color: var(--tertiary-color);
     background-color: #F7F8FA;
     font-family: 'Open Sans';
     display: flex;
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    box-sizing: border-box;
 }
 
 th{
@@ -73,7 +70,7 @@ tr :first-child{
 }
 
 tbody{
-    vertical-align: top; /* Alinear filas en la parte superior */
+    vertical-align: top;
 
 }
 #table-data td {
@@ -84,7 +81,6 @@ tbody{
     background-color: #F7F8FA;
 }
 
-/* Opcional: Cambiar el color de fondo cuando se pasa el ratón sobre una fila */
 #table tr:hover {
-    background-color: #e0e0e0; /* Color de fondo al pasar el ratón sobre la fila */
+    background-color: #e0e0e0; 
 }

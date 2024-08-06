@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./components/main.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>   
     <title>Porfolio</title>
 </head>
 
@@ -34,15 +33,14 @@
                 Clear
             </button>
         </section>
-
         <section id="indicators">
             <article id="status">
                 <span>
                     <h3>Status</h3>
-                    <h4>in last 7 days </h4>
+                    <h4 id="statusChoise">ALL</h4>
                 </span>
                 <span>
-                    <data    id="totalRecords">0303</data>
+                    <data id="totalRecords">0303</data>
                     <h4>Total records</h4>
                 </span>
             </article>
@@ -97,22 +95,16 @@
                             <th id="processed">PROCESSED</th>
                             <th id="total">TOTAL</th>
                         </tr>
-                    </thead>
+                    </thead>    
                     <tbody>
                     </tbody>
                 </table>
             </div>
         </section>
-
     </main>
-    <!-- <script src="table.js"></script> -->
-    <script type="module" src="cackechart.js"></script>
-    <script type="module" src="dataService.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>   
     <script type="module" src="main.js"></script>
-    <!-- <script src="cackechart.js"></script> -->
-    <script type="module" src="tableController.js"></script>
-
-
+    <script type="module" src="cackechart.js"></script>
 </body>
 
 </html> 

@@ -1,6 +1,7 @@
 // main.js
 import { loadData } from './dataService.js';
 import { populateTable, filterData, clearTable } from './tableController.js';
+import { handleApplyClick, handleClearClick } from './statusController.js';
 
 // Variable global para almacenar datos
 window.data = [];
@@ -31,8 +32,13 @@ function applyFilters() {
 document.addEventListener('DOMContentLoaded', init);
 
 // Asignar la función de filtrado al botón Apply
-document.getElementById('apply').addEventListener('click', applyFilters);
+document.getElementById('apply').addEventListener('click', () => {
+    handleApplyClick();
+    applyFilters();
+});
 
 // Asignar la función de limpieza al botón Clear
-document.getElementById('clear').addEventListener('click', clearTable);
-s
+document.getElementById('clear').addEventListener('click', () => {
+    handleClearClick();
+    clearTable();
+});

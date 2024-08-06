@@ -16,7 +16,7 @@ async function loadData(url) {
 }
 
 // Función para calcular el porcentaje
-function calculatePercentage(part, total) {
+function calculatePercentage(part, total) {         
     return ((part / total) * 100).toFixed(2);
 }
 

@@ -87,7 +87,7 @@ tbody{
         width: 100vw;
     }
     table tr{
-        width: 100vw;
+        width: 90vw;
     }
     table{
         width: 100vw;
@@ -114,6 +114,9 @@ tbody{
 }
 
 @media (max-width: 500px){
+    th{
+        padding: 9px 0px 0 16px;
+    }
     #name{
         width: 250px;
     }

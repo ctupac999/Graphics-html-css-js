@@ -105,16 +105,25 @@ tbody{
     }
 }
 @media (max-width: 700px){
+    #name{
+        width: 150px;;
+    }
     tr :first-child{
         width: 120px;
     }
 }
 
 @media (max-width: 500px){
-    th :first-child{
-        padding-right: 30px;
+    #name{
+        width: 250px;
     }
     tr :first-child{
-        width: 50px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 450px){
+    #name{
+        width: 600px;
     }
 }

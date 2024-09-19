@@ -18,3 +18,9 @@ h4 {
     font-family: var(--font-secondary);
     color: var(--secondary-color);
 }
+
+@media (max-width: 900px){
+    #heading{
+        width: 100vw;
+    }
+}

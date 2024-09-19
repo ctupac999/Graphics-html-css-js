@@ -105,28 +105,33 @@ tbody{
     }
 }
 @media (max-width: 700px){
+    th{
+        padding: 9px 0px 0 16px;
+    }
     #name{
-        width: 150px;;
+        width: 250px;
+        padding-right: 50px;
+    }
+    #identificator{
+        padding-right: 30px;
     }
     tr :first-child{
         width: 120px;
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 440px){
     th{
         padding: 9px 0px 0 16px;
     }
     #name{
         width: 250px;
+        padding-right: 33px;
+    }
+    #identificator{
+        padding-right: 20px;
     }
     tr :first-child{
         width: 30px;
-    }
-}
-
-@media (max-width: 450px){
-    #name{
-        width: 600px;
     }
 }

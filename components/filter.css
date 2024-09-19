@@ -85,3 +85,13 @@ button {
     color: var(--quaternary-color);
     background-color: var(--primary-background-color);
 }
+
+
+@media (max-width: 600px){
+    form{
+        width: 160px;
+    }
+    #filter select{
+        width: 100px;
+    }
+}

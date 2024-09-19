@@ -1,4 +1,3 @@
-
 #table {
     height: 400px;
     width: 990px;
@@ -18,12 +17,11 @@ table {
     overflow-y: scroll;
     vertical-align: top; 
     padding-top: 110px;
-
 }
 
 #table tr {
     height: 42px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans';   
     color: var(--primary-color);
     font-size: 14px;
 }
@@ -80,4 +78,43 @@ tbody{
 
 #table tr:hover {
     background-color: #e0e0e0; 
+}
+
+
+@media (max-width: 900px){
+    
+    thead{
+        width: 100vw;
+    }
+    table tr{
+        width: 100vw;
+    }
+    table{
+        width: 100vw;
+    }
+    #table{
+        width: 100vw;
+    }
+    tr :first-child{
+        width: 140px;
+    }
+}
+@media (max-width: 760px){
+    tr :first-child{
+        width: 120px;
+    }
+}
+@media (max-width: 700px){
+    tr :first-child{
+        width: 120px;
+    }
+}
+
+@media (max-width: 500px){
+    th :first-child{
+        padding-right: 30px;
+    }
+    tr :first-child{
+        width: 50px;
+    }
 }
